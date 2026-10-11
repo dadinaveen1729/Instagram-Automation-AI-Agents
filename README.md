@@ -22,7 +22,7 @@ see it.
 Paste this into Claude:
 
 ```
-https://github.com/Jakeschincariol/instagram-agent-skill
+https://github.com/dadinaveen1729/Instagram-Automation-AI-Agents-skill
 
 Install this skill, then confirm /ig-reel works.
 ```
@@ -30,14 +30,14 @@ Install this skill, then confirm /ig-reel works.
 Or do it yourself, in Claude Code:
 
 ```bash
-git clone https://github.com/Jakeschincariol/instagram-agent-skill.git
+git clone https://github.com/dadinaveen1729/Instagram-Automation-AI-Agents-skill.git
 cp -r instagram-agent-skill/skills/ig-* ~/.claude/skills/
 ```
 
 Or as a plugin:
 
 ```
-/plugin marketplace add Jakeschincariol/instagram-agent-skill
+/plugin marketplace add dadinaveen1729/Instagram-Automation-AI-Agents-skill
 /plugin install instagram-agent
 ```
 
@@ -328,10 +328,10 @@ templates/voice.md                 your voice profile. Fill this in first.
 
 ## Credit
 
-Made by Jake Schincariol, [opusjake.ai](https://opusjake.ai).
+Made by Naveen Dadi.
 
 Sibling repo, same idea for a different platform:
-[linkedin-agent-skill](https://github.com/Jakeschincariol/linkedin-agent-skill).
+
 
 ## License
 
