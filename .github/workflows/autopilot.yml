@@ -1,0 +1,22 @@
+name: instagram-autopilot
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # every 3 hours; each run posts only what is due and under the daily cap
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish due items
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_LIVE: ${{ vars.IG_LIVE }}   # set repo variable IG_LIVE=1 to go live
+        run: python3 automation/autopilot.py
+      - name: Save queue state
+        run: |
+          git config user.name "autopilot"; git config user.email "autopilot@users.noreply.github.com"
+          git add -A automation && (git diff --cached --quiet || git commit -m "autopilot: update queue" && git push)
