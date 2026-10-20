@@ -46,9 +46,10 @@ def gate(item):
                          if str(c.get("status", "")).upper() != "PASS"] or ["caption lint not READY"]
         except Exception:
             problems.append("caption lint not READY")
-    rc, _, _ = run("ig-human/detect.py", "-", text=cleaned)
+    rc, out, _ = run("ig-human/detect.py", "-", text=cleaned)
     if rc != 0:
-        problems.append("human-score check flagged")
+        weak = [l.strip() for l in out.splitlines() if "Weakest" in l or "variation" in l or "contractions" in l]
+        problems.append("human-score check flagged: " + " | ".join(weak))
     if "{{" in cleaned:
         problems.append("unfilled {{placeholder}} in caption")
     return cleaned.strip(), problems

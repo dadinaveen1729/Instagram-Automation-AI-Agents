@@ -1,0 +1,11 @@
+{
+  "handle": "@yourhandle",
+  "niche": "FILL IN: what the account is about, one sentence",
+  "audience": "FILL IN: who you are talking to, be specific",
+  "voice": "Direct, plain words, short sentences. No hype, no emoji, no greetings.",
+  "never_say": ["stop scrolling", "game changer", "in today's video"],
+  "topics": ["FILL IN topic 1", "FILL IN topic 2", "FILL IN topic 3"],
+  "keywords": ["FILL IN search term"],
+  "posts_per_week": {"CAROUSEL": 2, "REELS": 3, "IMAGE": 1},
+  "colors": {"bg": "#101418", "fg": "#F5F1E8", "accent": "#FFB84D"}
+}
