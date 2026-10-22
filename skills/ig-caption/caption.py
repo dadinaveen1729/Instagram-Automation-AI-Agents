@@ -50,7 +50,7 @@ ASKS = [
     (re.compile(r"(?i)\bfollow (?:me|for)\b"), "follow"),
     (re.compile(r"(?i)\blink in (?:my )?bio\b"), "link in bio"),
     (re.compile(r"(?i)\b(?:swipe|tap) (?:through|left|right|for|to)\b"), "swipe or tap"),
-    (re.compile(r"(?i)\btell me\b|\bwhat would you\b|\bwhich one\b"), "answer a question"),
+    (re.compile(r"(?i)\btell (?:me|us)\b|\blet (?:me|us) know\b|\bwhat would you\b|\bwhich one\b|\bwhat(?:'s| is) your\b|\bwhere(?:'s| is) your\b"), "answer a question"),
 ]
 
 FILLER_TAGS = {"#viral", "#fyp", "#explore", "#explorepage", "#foryou", "#foryoupage",

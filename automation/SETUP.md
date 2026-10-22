@@ -1,21 +1,26 @@
-# Instagram autopilot: one-time setup
+# Boost Oxygen Instagram automation: setup
 
-After this, it runs alone. Every Monday it writes the week, makes the images and Reels,
-checks them, and either posts them on schedule (auto) or opens a pull request you merge
-from your phone to approve.
+Every Monday it drafts the week under the Brand Toolkit and Abi's copy rules, renders the images
+and Reels, checks them, and opens a pull request. **Nothing publishes until the PR is merged
+(approval).** After the merge, the publisher posts each approved item at its scheduled time.
 
-**Requires a public GitHub repo** (Instagram must fetch media from a public link).
+## One-time setup
+1. Instagram account is Business or Creator, linked to a Facebook Page, with a Meta Business account.
+2. developers.facebook.com: create an app with "Instagram API with Facebook Login"
+   (`instagram_basic`, `instagram_content_publish`). Get the Instagram user ID and a long-lived token
+   (renew about every 60 days).
+3. Anthropic API key (pay as you go).
+4. GitHub repo: Secrets `IG_USER_ID`, `IG_ACCESS_TOKEN`, `ANTHROPIC_API_KEY`. Variable `IG_LIVE=1` only
+   when ready to post for real (leave unset for dry runs). Repo must be public for Instagram to fetch media
+   (or tell us and we change the hosting).
+5. Add the approved assets (see `assets/README.md`): the approved logo files and approved photos.
+   Without logos, every post is flagged "logo missing" and held for review.
+6. Confirm the full product names (see `brand.json` -> `products.confirmed_full_names`).
 
-1. Instagram: switch to a Business or Creator account, link it to a Facebook Page.
-2. developers.facebook.com: create an app, add "Instagram API with Facebook Login",
-   permissions `instagram_basic` and `instagram_content_publish`. Get your Instagram user ID
-   and a long-lived access token (renew about every 60 days).
-3. console.anthropic.com: create an API key (pay as you go, roughly cents per week).
-4. GitHub repo > Settings > Secrets and variables > Actions:
-   - Secrets: `IG_USER_ID`, `IG_ACCESS_TOKEN`, `ANTHROPIC_API_KEY`
-   - Variables: `AUTO_APPROVE` = `1` for fully hands-off (or leave unset to approve by merging a PR),
-     `IG_LIVE` = `1` to really post (leave unset first to test)
-5. Edit `automation/brand.json`: niche, audience, topics, search terms, posts per week.
-6. Actions tab > run `instagram-generate` once, check the output, then set `IG_LIVE=1`.
+## Approving
+- `queue/` posts: clean. Merge the PR to approve.
+- `review/` posts: flagged wording (see `REVIEW.md`). They never auto-publish. To approve one, edit its
+  JSON (fix wording if needed), set `"reviewed_by": "Abi"`, and move it to `queue/`. To reject, delete it.
+- Stop everything: add a file named `PAUSE` in `automation/`.
 
-Stop everything: add a file named `PAUSE` in `automation/`.
+Rules enforced by `compliance.py` and `render.py` are listed in `docs/boost-oxygen-brand-rules.md`.

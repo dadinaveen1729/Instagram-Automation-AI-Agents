@@ -1,11 +1,50 @@
 {
-  "handle": "@yourhandle",
-  "niche": "FILL IN: what the account is about, one sentence",
-  "audience": "FILL IN: who you are talking to, be specific",
-  "voice": "Direct, plain words, short sentences. No hype, no emoji, no greetings.",
-  "never_say": ["stop scrolling", "game changer", "in today's video"],
-  "topics": ["FILL IN topic 1", "FILL IN topic 2", "FILL IN topic 3"],
-  "keywords": ["FILL IN search term"],
-  "posts_per_week": {"CAROUSEL": 2, "REELS": 3, "IMAGE": 1},
-  "colors": {"bg": "#101418", "fg": "#F5F1E8", "accent": "#FFB84D"}
+  "brand_name": "Boost Oxygen",
+  "handle": "@boostoxygen",
+  "voice": "Optimistic, relatable, educational. Friendly, natural, easy to understand. Active verbs, simple words, plain examples. A little light humor is fine, never corny, exaggerated or salesy. No hyperbole or superlatives. No jargon unless defined.",
+  "pillars": ["BREATHE BETTER", "LIVE WELL", "PUSH BEYOND"],
+  "need_states": ["Support", "Enjoyment", "Performance"],
+  "taglines": ["BREATHE BETTER", "HELP IS HERE"],
+  "tagline_rule": "Use a tagline only as an occasional sign-off. Do not overuse.",
+  "colors": {
+    "dark_green": "#004E3B", "mid_green": "#017543", "light_green": "#82D17E",
+    "light_gray": "#EBEBEB", "white": "#FFFFFF", "black": "#1D1D1D", "dark_gray": "#8A8A8A"
+  },
+  "circle_colors_in_order": ["#8D45F4", "#ED2224", "#1B61D2", "#46D4BB", "#FFA71A"],
+  "circle_labels_in_order": ["Support", "Air Quality", "Athletics", "Altitude", "Environment/Allergens"],
+  "approved_facts": [
+    "Boost Oxygen provides supplemental oxygen, available anytime, anywhere.",
+    "95% pure oxygen (tested consistently by Atlantic Analytical Laboratory, results posted on boostoxygen.com).",
+    "Nearly 5X more oxygen than normal air.",
+    "Available in 18,000+ retailers across the USA.",
+    "12 million+ canisters sold in 50+ countries.",
+    "100% manufactured and filled in the USA. Use the exact phrase: Made in USA.",
+    "Proud supporters of MedTechVets, helping veterans secure employment and mentorship in the biomedical tech industry.",
+    "Featured on The Simpsons and American Idol; used by players during the Super Bowl; Shark Tank deal with Kevin O'Leary in October 2019.",
+    "Lightweight, portable, no prescription needed.",
+    "Aroma lines: Revive (peppermint), Balance (pink grapefruit), Breathe (menthol and eucalyptus), Calm (lavender), Focus (rosemary), Sport (orange). Natural and Outdoors have no aroma. Sizes: pocket, medium, large."
+  ],
+  "allowed_numbers": ["5X", "95%", "18,000+", "18,000", "12 million+", "12 million", "50+", "100%", "2019", "10L"],
+  "products": {
+    "confirmed_full_names": ["SPORT Orange | Large (10L)"],
+    "name_format": "LINE Aroma | Size (Capacity), e.g. SPORT Orange | Large (10L)",
+    "lines": ["NATURAL", "REVIVE", "BALANCE", "BREATHE", "CALM", "FOCUS", "SPORT", "OUTDOORS"],
+    "aroma_words": ["peppermint", "pink grapefruit", "menthol", "eucalyptus", "lavender", "rosemary", "orange"],
+    "note": "Capacities for other sizes are not in the toolkit. Add each full name here once Rob confirms it."
+  },
+  "disclaimer": "Offer valid at www.boostoxygen.com. Discounts cannot be applied to Subscribe + Save Multi-Packs, which are already discounted. Discount applies to merchandise, not applicable to taxes or shipping and handling charges. Offer cannot be combined with any other offers or discounts. Not valid for cash or cash equivalent. No refunds or discounts on previous purchases. Offer only valid on merchandise in stock at time of purchase.\nOffer subject to change without notice.",
+  "max_hashtags": 5,
+  "max_emoji": 1,
+  "core_messages": {
+    "General": ["Relieve, recharge, recover", "Breathe stronger, play longer", "5X more oxygen than air", "Fuel your best"],
+    "Breathing-Challenged Seniors / Breathing-Compromised Adults (REVIEW CLOSELY, medical-adjacent)": ["Relief within reach", "Get back to what you love", "Concentrated oxygen when you need it", "Breathe better", "Help is here"],
+    "Hard-Working Dirty Jobs": ["Work hard, breathe easy", "Relief that doesn't clock out", "Oxygen that goes overtime", "Tough jobs call for Boost Oxygen"],
+    "Ultimate Colorado Mom": ["Make high-altitude acclimation easier", "Stay prepared with Boost Oxygen", "Ease into high altitudes", "Respiratory support for family, guests, and more"],
+    "Living Mountain High (event)": ["Feel better on the slopes and trails", "Concentrated oxygen to fuel your adventures", "Breathe better at altitude", "For high performance at high altitudes"],
+    "Living Mountain High (lifestyle)": ["Elevate your experience", "Go beyond your limits", "Fuel your best with 5X more oxygen", "Harness the power of pure oxygen"],
+    "Ambitious Athletic Trainer": ["Supercharged recovery", "Amplify your edge", "Trusted for top recovery", "Recover faster, feel stronger"]
+  },
+  "topics": ["Enjoyment: getting more out of activities you already love", "Performance: workouts and recovery routines", "Altitude and outdoors: hikes, ski days, trips", "Made in USA and product education", "Preparedness: keeping a canister at home or in the bag"],
+  "keywords": ["supplemental oxygen", "portable oxygen"],
+  "posts_per_week": {"CAROUSEL": 2, "REELS": 2, "IMAGE": 1}
 }

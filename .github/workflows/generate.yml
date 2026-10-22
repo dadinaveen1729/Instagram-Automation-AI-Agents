@@ -1,7 +1,7 @@
 name: instagram-generate
 on:
   schedule:
-    - cron: "11 6 * * 1"     # every Monday 06:11 UTC: write and render the week
+    - cron: "11 6 * * 1"     # every Monday: draft, render and check the week, then open a PR for approval
   workflow_dispatch:
 permissions:
   contents: write
@@ -12,27 +12,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install tools
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-dejavu-core && pip install -q pillow
-      - name: Write and render the week
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install -q pillow
+      - name: Draft and render the week
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/automation/media
         run: python3 automation/generate.py
-      - name: Auto-approve (commit to main) or open a PR for approval
+      - name: Open a pull request for approval (approval is required, nothing posts without a merge)
         env:
           GH_TOKEN: ${{ github.token }}
-          AUTO_APPROVE: ${{ vars.AUTO_APPROVE }}
         run: |
           git config user.name "autopilot"; git config user.email "autopilot@users.noreply.github.com"
           git add -A automation
           git diff --cached --quiet && { echo "nothing generated"; exit 0; }
-          if [ "$AUTO_APPROVE" = "1" ]; then
-            git commit -m "autopilot: weekly posts (auto-approved)" && git push
-          else
-            B="autopilot/week-$(date +%Y%m%d)"
-            git checkout -b "$B" && git commit -m "autopilot: weekly posts for approval"
-            git push -u origin "$B"
-            gh pr create --title "Approve this week's Instagram posts" \
-              --body "Merge to approve and schedule. Close to reject. Preview the images and videos under automation/media/." \
-              --base main --head "$B"
-          fi
+          B="autopilot/week-$(date +%Y%m%d)"
+          git checkout -b "$B" && git commit -m "Weekly Instagram drafts for approval"
+          git push -u origin "$B"
+          gh pr create --title "Approve this week's Boost Oxygen Instagram posts" \
+            --body-file automation/REVIEW.md --base main --head "$B"

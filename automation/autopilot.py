@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Hands-off publisher for Instagram, built on the official Content Publishing API.
+"""Publisher for Instagram on the official Content Publishing API. Posts only what passed the brand
+checks and was approved (PR merged; flagged items also need reviewed_by).
 
 Each queue/*.json item is humanized, linted and scored automatically. Items that
 pass go out; items that fail are moved to failed/ with the reasons. No browser
@@ -19,6 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
 SK = ROOT.parent / "skills"
 API = "https://graph.facebook.com/v21.0"
 LIVE = os.environ.get("IG_LIVE") == "1"
@@ -32,11 +34,23 @@ def run(script, *args, text=None):
 
 
 def gate(item):
-    """Humanize, then require caption lint READY and a human-score PASS."""
-    rc, cleaned, err = run("ig-human/humanize.py", "-", text=item["caption"])
+    """Brand compliance, humanize, lint, human-score. Returns (final_caption, problems, flags).
+    problems = must fix (blocks). flags = a human must review before it can publish."""
+    import compliance
+    raw, fixes = compliance.autofix(item["caption"])
+    body, has_disc, _ = compliance.split_disclaimer(raw)
+    visible = " ".join([s.get("headline", "") + " " + s.get("sub", "") + " " + s.get("body", "") + " " + s.get("eyebrow", "")
+                        for s in item.get("slides", [])] + [b.get("text", "") for b in item.get("beats", [])])
+    raw2, _ = compliance.ensure_disclaimer(raw)
+    body, has_disc, _ = compliance.split_disclaimer(raw2)
+    # humanize the body only: the supplied disclaimer must stay exactly as written
+    rc, cleaned, err = run("ig-human/humanize.py", "-", text=body)
     if rc != 0 or not cleaned.strip():
-        return None, ["humanizer failed: " + err.strip()[:200]]
-    problems = []
+        return None, ["humanizer failed: " + err.strip()[:200]], []
+    cleaned = cleaned.strip()
+    cleaned, _ = compliance.autofix(cleaned)
+    final = cleaned + ("\n\n" + compliance.DISC if has_disc else "")
+    problems, flags = compliance.check(final, visible)
     args = ["-", "--json"] + (["--keywords", item["keywords"]] if item.get("keywords") else [])
     rc, out, _ = run("ig-caption/caption.py", *args, text=cleaned)
     if rc != 0:
@@ -50,9 +64,9 @@ def gate(item):
     if rc != 0:
         weak = [l.strip() for l in out.splitlines() if "Weakest" in l or "variation" in l or "contractions" in l]
         problems.append("human-score check flagged: " + " | ".join(weak))
-    if "{{" in cleaned:
+    if "{{" in final:
         problems.append("unfilled {{placeholder}} in caption")
-    return cleaned.strip(), problems
+    return final, problems, flags
 
 
 def call(path, params, method="POST"):
@@ -129,7 +143,10 @@ def main():
         when = item.get("publish_at")
         if when and datetime.fromisoformat(when.replace("Z", "+00:00")) > now:
             continue
-        caption, problems = gate(item)
+        caption, problems, flags = gate(item)
+        flags = flags + item.get("flags", [])
+        if flags and not item.get("reviewed_by"):
+            problems = problems + ["needs human review (set reviewed_by after Abi approves): " + "; ".join(flags)]
         if problems:
             print(f"FAIL {f.name}: {problems}")
             if LIVE:
