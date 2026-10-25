@@ -1,0 +1,27 @@
+{
+  "cruxes": [
+    {
+      "question": "Fixed $75/hr by day 90, or $75 through base plus bonus?",
+      "sides": [
+        { "position": "Fixed rate, written targets", "seats": ["Bezos", "Martell", "Leila", "Wickman", "Elon", "Gary V"] },
+        { "position": "Lower base plus results bonus", "seats": ["Hormozi", "Buffett", "Naval"] }
+      ]
+    },
+    {
+      "question": "Does the ask need an ownership stake, not just pay?",
+      "sides": [
+        { "position": "Yes, a stake or revenue share", "seats": ["Naval"] },
+        { "position": "No, keep it a pay conversation", "seats": ["Bezos", "Martell", "Leila", "Wickman", "Elon", "Gary V", "Buffett", "Hormozi"] }
+      ]
+    },
+    {
+      "question": "Open at $75 flat, or inside a step-up?",
+      "sides": [
+        { "position": "$75 flat now, step-up as fallback", "seats": ["Elon", "Gary V"] },
+        { "position": "Step-up from the start", "seats": ["Bezos", "Martell", "Leila", "Wickman"] }
+      ]
+    }
+  ],
+  "unanimous": false,
+  "note": "Every seat says the founder needs three proven numbers first; the room fights over how to structure the $75."
+}

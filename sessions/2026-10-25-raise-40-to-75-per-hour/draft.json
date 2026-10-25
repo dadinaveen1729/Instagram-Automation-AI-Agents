@@ -1,0 +1,18 @@
+{
+  "option": "C",
+  "label": "GO WITH CONDITIONS",
+  "recommendation": "Ask for $75 an hour, structured as $55 now and $75 automatically at day 90 against three targets the COO signs first. Bring a one-page proof sheet worth at least $156k a year.",
+  "conditions": [
+    "Proof sheet by Nov 1: three sourced dollar figures totalling at least $156k a year",
+    "COO signs three day-90 targets before $55 starts, with $75 as the automatic result",
+    "Runbooks for core systems; someone else runs one by day 30",
+    "Meeting held by Nov 8, COO first, then CEO"
+  ],
+  "next_steps": [
+    "By Nov 1: build the proof sheet and draft the three targets",
+    "By Nov 8: meet the COO, then the CEO",
+    "Day 90: check targets and move to $75"
+  ],
+  "cheapest_test": "Get the COO to initial one line of the proof sheet before booking the CEO meeting.",
+  "kill_criteria": "If no figure survives the COO's check, do not ask yet. If the answer is 'not now' with no date, decide privately whether to stay."
+}

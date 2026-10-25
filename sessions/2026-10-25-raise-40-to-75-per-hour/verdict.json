@@ -1,0 +1,40 @@
+{
+  "label": "WAIT",
+  "call": "Ask for $75 an hour as Option C: $55 now and $75 automatically at day 90 against targets the COO and CEO sign first. Do not book the meeting until a proof sheet worth at least $200k a year exists and the COO has initialed it (sheet by Nov 1, meeting by Nov 8).",
+  "recommended": "C",
+  "why": [
+    { "point": "Pay moves after proof, not before: the step costs the company about $10k for 90 days, and $75 starts only once signed targets are hit.", "seat": "Bezos", "framework": "Type 1 and Type 2 doors" },
+    { "point": "$75 is about $156k a year against about $83k now. Nobody pays a $73k gap on a feeling, so the proof sheet comes first.", "seat": "Hormozi", "framework": "3:1 return floor" },
+    { "point": "Targets are logged inputs signed in advance, so there is no bonus formula to argue about each quarter.", "seat": "Wickman", "framework": "Rocks and Scorecard" },
+    { "point": "Lead with $75 and name the path to it in the same breath; never say 'or else'.", "seat": "Gary V", "framework": "Document, don't create" }
+  ],
+  "minority": { "seat": "Hormozi", "quote": "Nobody pays $73k more for your word.", "would_have_to_be_true": "The company has thin margins or will not fund a fixed rate, so the floor should be $219k and the structure should be B." },
+  "next_steps": [
+    { "when": "By Nov 1", "action": "Build the proof sheet and three targets; get the COO to initial one line." },
+    { "when": "By Nov 8", "action": "Meet the COO, then the CEO, using the script in pitch.md." },
+    { "when": "Day 90", "action": "Check the targets; pay moves to $75; then ask for a share of measured savings." }
+  ],
+  "kill_criteria": "If no figure survives the COO's check, do not ask yet. If both say 'not now' with no date, decide privately whether to stay.",
+  "conditions": [
+    "Proof sheet of at least $200k a year, COO initials on each line",
+    "Rebuild cost of the systems is over one month of work",
+    "Runbooks exist before the meeting; someone else runs one system by day 30",
+    "At most three logged-input targets initialed by COO and CEO before $55 starts"
+  ],
+  "fights": [
+    { "crux": "Fixed $75 or base plus bonus?", "story": "Six seats wanted fixed, Hormozi, Naval and Buffett wanted B. They moved to one logged metric; C won on simplicity, B stays as the last-resort fallback." },
+    { "crux": "Ask for an ownership stake?", "story": "Naval asked, Leila said CEOs hear it as a power grab. Naval dropped equity for a savings share to ask for after day 90." },
+    { "crux": "Open flat or inside the step-up?", "story": "Elon and Gary V wanted a flat anchor, Bezos said no landing place breaks trust. Resolved: say $75 first, name the 90-day path in the same breath." }
+  ],
+  "amendments": [
+    { "seat": "Buffett", "amendment": "Raise the value floor to $200k", "adopted": true, "reason": "$156k only pays for the hours; no margin of safety." },
+    { "seat": "Hormozi", "amendment": "Raise the floor to $219k", "adopted": false, "reason": "Went in the minority report; $200k adopted as the compromise." },
+    { "seat": "Wickman", "amendment": "13 weeks of trend; CEO also initials targets", "adopted": true, "reason": "Unanswered and strengthens the proof." },
+    { "seat": "Leila", "amendment": "Runbooks before the meeting", "adopted": true, "reason": "The COO's first question is whether it runs without you." },
+    { "seat": "Elon", "amendment": "B is last resort; add the leverage test", "adopted": true, "reason": "Matches the Round 2 majority." },
+    { "seat": "Naval", "amendment": "B base at least $60, one metric; know-how clause", "adopted": true, "reason": "Adopted for B; the know-how clause became a request for credit, pending the employment agreement." }
+  ],
+  "cheapest_test": "Get the COO to initial one line of the proof sheet before booking the CEO meeting.",
+  "revisit": "After day 90, with the logged results.",
+  "override_note": "The score (7.8) sits in the GO band; the label is WAIT because the required proof sheet does not exist yet."
+}

@@ -1,0 +1,25 @@
+{
+  "title": "Raise from $40 to $75 per hour",
+  "decision": "Ask the CEO and COO of Boost Oxygen for $75/hr (from $40/hr), justified by the AI automation systems built, and choose how to structure the ask.",
+  "mode": "full",
+  "options": [
+    { "id": "A", "label": "Ask $75/hr flat, now" },
+    { "id": "B", "label": "$75/hr effective: lower base plus bonus" },
+    { "id": "C", "label": "Step-up: $55 now, $75 in 90 days" },
+    { "id": "D", "label": "Don't ask, stay at $40" }
+  ],
+  "weights": {
+    "hormozi": { "weight": 3, "reason": "Pricing your value against the value you create is his pillar" },
+    "naval": { "weight": 3, "reason": "Rented hours versus leverage and equity is his pillar" },
+    "buffett": { "weight": 2, "reason": "Cost to the company and downside if the ask fails" },
+    "bezos": { "weight": 2, "reason": "Reversibility of the ask and the relationship" },
+    "martell": { "weight": 2, "reason": "Whether the founder is the bottleneck or the buyer-back of time" },
+    "leila": { "weight": 2, "reason": "How a CEO and COO react to a pay ask; leadership dynamics" },
+    "wickman": { "weight": 2, "reason": "COO lens: ownership, accountability, documented systems" },
+    "musk": { "weight": 1, "reason": "Real constraint and speed, at the edges" },
+    "garyvee": { "weight": 1, "reason": "Storytelling and personal brand, at the edges" }
+  },
+  "seats": ["hormozi", "naval", "buffett", "bezos", "martell", "leila", "wickman", "musk", "garyvee"],
+  "brief": "An hourly employee at $40/hr who built AI automation systems for Boost Oxygen asks the CEO and COO for $75/hr. No impact numbers yet.",
+  "assumptions": ["Impact numbers not yet measured (assumed)", "About 40 hrs a week (assumed)", "Founder wants to stay (assumed)"]
+}
