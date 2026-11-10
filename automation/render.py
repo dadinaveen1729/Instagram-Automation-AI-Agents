@@ -88,21 +88,39 @@ def circles(d, x, y):
     return y + dia
 
 
+LAST_Y = [0]
+
+
 def card(size, eyebrow="", headline="", sub="", body="", theme="dark", photo=None,
          use_circles=False, tag="", progress=None, warnings=None):
+    """Text cards (no photo) get their text block vertically centered; photo cards keep text under the photo."""
+    kw = dict(eyebrow=eyebrow, headline=headline, sub=sub, body=body, theme=theme, photo=photo,
+              use_circles=use_circles, tag=tag, progress=progress, warnings=[])
+    if photo:
+        return _card(size, warnings=warnings, **{k: v for k, v in kw.items() if k != 'warnings'})
+    top0 = int(size[1] * 0.07)
+    _card(size, _top=top0, **kw)
+    block = LAST_Y[0] - top0
+    new_top = max(top0, (size[1] - block) // 2 - int(size[1] * 0.03))
+    return _card(size, _top=new_top, warnings=warnings, **{k: v for k, v in kw.items() if k != 'warnings'})
+
+
+def _card(size, eyebrow="", headline="", sub="", body="", theme="dark", photo=None,
+          use_circles=False, tag="", progress=None, warnings=None, _top=None):
     warnings = warnings if warnings is not None else []
     W, H = size
     bg, hc, ec, bc, _ = THEMES[theme]
     img = Image.new("RGB", size, bg)
     d = ImageDraw.Draw(img)
     m = int(W * 0.08)
-    top = int(H * 0.07)
+    top = _top if _top is not None else int(H * 0.07)
     if photo:
         ph_h = int(H * 0.52)
         if place_photo(img, photo, (0, 0, W, ph_h), bg, warnings):
             top = ph_h + int(H * 0.03)
         use_circles = False  # circles never share an asset with a photo
-    hs = int(W * 0.105) if not photo else int(W * 0.07)
+    base = min(W, H * 0.8)
+    hs = int(base * 0.105) if not photo else int(base * 0.07)
     hf = font(OSWALD, hs)
     H_TXT = headline.upper()
     max_lines = 5 if not photo else 3
@@ -133,6 +151,7 @@ def card(size, eyebrow="", headline="", sub="", body="", theme="dark", photo=Non
         for ln in wrap(d, body, bf, W - 2 * m):
             d.text((m, y), ln, font=bf, fill=bc)
             y += int(bf.size * 1.4)
+    LAST_Y[0] = y
     paste_logo(img, theme, warnings, m)
     if tag:
         tf = font(BOLD, 28)
@@ -173,7 +192,7 @@ def render_reel(beats, out, warnings):
         (Path(td) / "list.txt").write_text("\n".join(lst))
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0",
                         "-i", str(Path(td) / "list.txt"), "-f", "lavfi", "-i",
-                        "anullsrc=r=44100:cl=stereo", "-shortest", "-r", "30",
+                        "anullsrc=r=44100:cl=stereo", "-t", f"{total:.2f}", "-r", "30",
                         "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac",
                         "-movflags", "+faststart", str(out)], check=True)
     return out
