@@ -8,57 +8,91 @@
     "beats": 4,
     "bg": "dark",
     "eyebrow": "POV: it's still morning",
-    "punch": true
+    "punch": true,
+    "art": {
+     "kind": "chart"
+    }
    },
    {
     "text": "Bold strategy.",
     "beats": 4,
-    "bg": "light"
+    "bg": "light",
+    "art": {
+     "kind": "chart"
+    }
    },
    {
     "text": "Counter-offer:",
     "beats": 4,
-    "bg": "mid"
+    "bg": "mid",
+    "art": {
+     "kind": "chart"
+    }
    },
    {
     "text": "Go outside. *Seriously.*",
     "beats": 6,
     "bg": "dark",
-    "punch": true
+    "punch": true,
+    "art": {
+     "kind": "chart",
+     "morph": [
+      0,
+      1
+     ]
+    }
    },
    {
     "text": "The trail doesn't have a ticker.",
     "beats": 6,
-    "bg": "light"
+    "bg": "light",
+    "art": {
+     "kind": "trail"
+    }
    },
    {
     "text": "We make supplemental oxygen. Not financial advice.",
     "beats": 6,
-    "bg": "dark"
+    "bg": "dark",
+    "art": {
+     "kind": "trail"
+    }
    },
    {
     "text": "Pack *Boost Oxygen.* Portable. Lightweight. Made in USA.",
     "beats": 8,
     "bg": "mid",
-    "circles": true
+    "circles": true,
+    "art": {
+     "kind": "trail"
+    }
    },
    {
     "text": "Nearly *5X* more oxygen than normal air.",
     "beats": 6,
-    "bg": "dark"
+    "bg": "dark",
+    "art": {
+     "kind": "trail"
+    }
    },
    {
     "text": "The charts will still be there. *Go anyway.*",
     "beats": 8,
     "bg": "light",
-    "punch": true
+    "punch": true,
+    "art": {
+     "kind": "trail"
+    }
    },
    {
     "text": "BREATHE BETTER",
     "beats": 8,
     "bg": "dark",
     "sub": "Boost Oxygen",
-    "circles": true
+    "circles": true,
+    "art": {
+     "kind": "bokeh"
+    }
    }
   ],
   "instagram": "Checking the market. Again.\n\nWe make supplemental oxygen, not financial advice, but here's our hot take: the trail doesn't have a ticker.\n\nPack Boost Oxygen, portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air. The charts will still be there when you get back.\n\nWho else just checked their phone twice? Tell us below.\n\n#boostoxygen #unplug",
@@ -75,60 +109,93 @@
     "beats": 4,
     "bg": "dark",
     "eyebrow": "Headline of the week",
-    "punch": true
+    "punch": true,
+    "art": {
+     "kind": "network"
+    }
    },
    {
     "text": "Plan your trip.",
     "beats": 4,
-    "bg": "mid"
+    "bg": "mid",
+    "art": {
+     "kind": "network"
+    }
    },
    {
     "text": "Even apologize for you.",
     "beats": 4,
-    "bg": "light"
+    "bg": "light",
+    "art": {
+     "kind": "network"
+    }
    },
    {
     "text": "Impressive. *Truly.*",
     "beats": 4,
-    "bg": "dark"
+    "bg": "dark",
+    "art": {
+     "kind": "network"
+    }
    },
    {
     "text": "Skills AI does not have:",
     "beats": 8,
-    "bg": "light"
+    "bg": "light",
+    "art": {
+     "kind": "network"
+    }
    },
    {
     "text": "Skill one: trail snacks.",
     "beats": 4,
-    "bg": "mid"
+    "bg": "mid",
+    "art": {
+     "kind": "trail"
+    }
    },
    {
     "text": "Skill two: a dumb grin at the summit.",
     "beats": 4,
-    "bg": "dark"
+    "bg": "dark",
+    "art": {
+     "kind": "trail"
+    }
    },
    {
     "text": "Skill three: a *Boost Oxygen* canister in the bag.",
     "beats": 6,
     "bg": "mid",
-    "punch": true
+    "punch": true,
+    "art": {
+     "kind": "trail"
+    }
    },
    {
     "text": "Nearly *5X* more oxygen than normal air. Made in USA.",
     "beats": 6,
-    "bg": "dark"
+    "bg": "dark",
+    "art": {
+     "kind": "trail"
+    }
    },
    {
     "text": "Go be a human. *It's still a pretty great job.*",
     "beats": 8,
-    "bg": "light"
+    "bg": "light",
+    "art": {
+     "kind": "trail"
+    }
    },
    {
     "text": "BREATHE BETTER",
     "beats": 8,
     "bg": "dark",
     "sub": "Boost Oxygen",
-    "circles": true
+    "circles": true,
+    "art": {
+     "kind": "bokeh"
+    }
    }
   ],
   "instagram": "AI can write your email, plan your trip and apologize for you.\n\nIt can't do trail snacks, a dumb grin at the summit, or a Boost Oxygen canister in the bag. Portable, lightweight, Made in USA, with nearly 5X more oxygen than normal air.\n\nGo be a human. It's still a pretty great job. What's your most analog move this week? Tell us below.\n\n#boostoxygen #goanalog",
@@ -145,60 +212,283 @@
     "beats": 4,
     "bg": "dark",
     "eyebrow": "Thanksgiving week",
-    "punch": true
+    "punch": true,
+    "art": {
+     "kind": "pie",
+     "fill": [
+      0,
+      0.25
+     ]
+    }
    },
    {
     "text": "Pie is *earned.*",
     "beats": 8,
-    "bg": "light"
+    "bg": "light",
+    "art": {
+     "kind": "pie",
+     "fill": [
+      0.25,
+      1
+     ]
+    }
    },
    {
     "text": "Step one: turkey trot.",
     "beats": 4,
-    "bg": "mid"
+    "bg": "mid",
+    "art": {
+     "kind": "route"
+    }
    },
    {
     "text": "Step two: tell everyone you *ran* it.",
     "beats": 6,
-    "bg": "dark"
+    "bg": "dark",
+    "art": {
+     "kind": "route"
+    }
    },
    {
     "text": "It was a brisk walk.",
     "beats": 4,
     "bg": "light",
-    "punch": true
+    "punch": true,
+    "art": {
+     "kind": "route"
+    }
    },
    {
     "text": "Step three: pie.",
     "beats": 4,
-    "bg": "mid"
+    "bg": "mid",
+    "art": {
+     "kind": "route"
+    }
    },
    {
     "text": "Pack SPORT Orange | Large (10L) for the trot.",
     "beats": 6,
-    "bg": "dark"
+    "bg": "dark",
+    "art": {
+     "kind": "route"
+    }
    },
    {
     "text": "Orange aroma. Nearly *5X* more oxygen than normal air. Made in USA.",
     "beats": 8,
-    "bg": "mid"
+    "bg": "mid",
+    "art": {
+     "kind": "route",
+     "two": true
+    }
    },
    {
     "text": "Favorite part of the holiday? *Who you walk with.*",
     "beats": 8,
-    "bg": "light"
+    "bg": "light",
+    "art": {
+     "kind": "route",
+     "two": true
+    }
    },
    {
     "text": "BREATHE BETTER",
     "beats": 8,
     "bg": "dark",
     "sub": "Boost Oxygen",
-    "circles": true
+    "circles": true,
+    "art": {
+     "kind": "bokeh"
+    }
    }
   ],
   "instagram": "Thanksgiving math: pie is earned.\n\nStep one, turkey trot. Step two, tell everyone you ran it (it was a brisk walk, we won't tell). Step three, pie.\n\nPack SPORT Orange | Large (10L) for the trot: orange aroma, nearly 5X more oxygen than normal air, Made in USA.\n\nFavorite part of the holiday? Who you walk with. Tell us who's joining you below.\n\n#boostoxygen #turkeytrot",
   "facebook": "Thanksgiving math: pie is earned.\n\nStep one, turkey trot. Step two, tell everyone you ran it (it was a brisk walk, we won't tell). Step three, pie.\n\nPack SPORT Orange | Large (10L) for the trot: orange aroma, nearly 5X more oxygen than normal air, Made in USA.\n\nFavorite part of the holiday? Who you walk with. Tell us who's joining you in the comments.\n\n#boostoxygen #turkeytrot",
   "linkedin": "Thanksgiving week, sorted: get outside first, pie second.\n\nAt Boost Oxygen, we make portable, lightweight supplemental oxygen, Made in USA. Pack SPORT Orange | Large (10L) for the trail or the turkey trot.\n\nWhat's your Thanksgiving week ritual? Share it below.\n\n#boostoxygen #thanksgiving",
   "x": "Thanksgiving math: step one, turkey trot. Step two, tell everyone you ran it. It was a brisk walk. Step three, pie. SPORT Orange | Large (10L) comes along. Made in USA. #boostoxygen"
+ },
+ {
+  "id": "04-cheat-code",
+  "trend": "'Major cheat code in life' tip format",
+  "scenes": [
+   {
+    "text": "Major cheat code in life:",
+    "beats": 4,
+    "bg": "dark",
+    "art": {
+     "kind": "route"
+    },
+    "eyebrow": "Tiny tip",
+    "punch": true
+   },
+   {
+    "text": "Go outside *first.*",
+    "beats": 8,
+    "bg": "light",
+    "art": {
+     "kind": "route"
+    }
+   },
+   {
+    "text": "Emails will wait.",
+    "beats": 4,
+    "bg": "mid",
+    "art": {
+     "kind": "route"
+    }
+   },
+   {
+    "text": "So will the group chat.",
+    "beats": 4,
+    "bg": "dark",
+    "art": {
+     "kind": "route"
+    }
+   },
+   {
+    "text": "Pack *Boost Oxygen.* Portable. Lightweight. Made in USA.",
+    "beats": 8,
+    "bg": "mid",
+    "art": {
+     "kind": "trail"
+    }
+   },
+   {
+    "text": "Nearly *5X* more oxygen than normal air.",
+    "beats": 8,
+    "bg": "dark",
+    "art": {
+     "kind": "trail"
+    }
+   },
+   {
+    "text": "Cheat code unlocked. *You're welcome.*",
+    "beats": 10,
+    "bg": "light",
+    "art": {
+     "kind": "trail"
+    },
+    "punch": true
+   },
+   {
+    "text": "Go on. Try it.",
+    "beats": 6,
+    "bg": "dark",
+    "art": {
+     "kind": "trail"
+    }
+   },
+   {
+    "text": "BREATHE BETTER",
+    "beats": 8,
+    "bg": "dark",
+    "art": {
+     "kind": "bokeh"
+    },
+    "sub": "Boost Oxygen",
+    "circles": true
+   }
+  ],
+  "instagram": "Major cheat code in life: go outside first.\n\nEmails will wait. So will the group chat. Pack Boost Oxygen, portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air, and go.\n\nWhat's your cheat code? Tell us below.\n\n#boostoxygen #cheatcode",
+  "facebook": "Major cheat code in life: go outside first.\n\nEmails will wait. So will the group chat. Pack Boost Oxygen, portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air, and go.\n\nWhat's your cheat code? Tell us in the comments.\n\n#boostoxygen #cheatcode",
+  "linkedin": "Major cheat code in life: do the outdoor thing first. The emails will wait.\n\nAt Boost Oxygen, we make portable, lightweight supplemental oxygen, Made in USA, for people who want to enjoy more of what they love.\n\nWhat's your cheat code for a better week? Share it below.\n\n#boostoxygen #cheatcode",
+  "x": "Major cheat code in life: go outside first. Emails will wait. So will the group chat. Boost Oxygen: portable, lightweight, Made in USA. #boostoxygen"
+ },
+ {
+  "id": "05-no-lemons",
+  "trend": "'Life never handed me lemons' humor format",
+  "scenes": [
+   {
+    "text": "Life never handed me lemons.",
+    "beats": 4,
+    "bg": "dark",
+    "art": {
+     "kind": "chart"
+    },
+    "eyebrow": "Real talk",
+    "punch": true
+   },
+   {
+    "text": "It handed me a to-do list.",
+    "beats": 8,
+    "bg": "light",
+    "art": {
+     "kind": "chart"
+    }
+   },
+   {
+    "text": "And too many tabs.",
+    "beats": 4,
+    "bg": "mid",
+    "art": {
+     "kind": "chart",
+     "morph": [
+      0,
+      0.4
+     ]
+    }
+   },
+   {
+    "text": "So I went *outside.*",
+    "beats": 6,
+    "bg": "dark",
+    "art": {
+     "kind": "chart",
+     "morph": [
+      0.4,
+      1
+     ]
+    },
+    "punch": true
+   },
+   {
+    "text": "Highly recommend.",
+    "beats": 8,
+    "bg": "light",
+    "art": {
+     "kind": "trail"
+    }
+   },
+   {
+    "text": "Pack *Boost Oxygen.* Portable. Lightweight. Made in USA.",
+    "beats": 8,
+    "bg": "mid",
+    "art": {
+     "kind": "trail"
+    }
+   },
+   {
+    "text": "Nearly *5X* more oxygen than normal air.",
+    "beats": 6,
+    "bg": "dark",
+    "art": {
+     "kind": "trail"
+    }
+   },
+   {
+    "text": "Life never handed me lemons. *I found a trail.*",
+    "beats": 8,
+    "bg": "light",
+    "art": {
+     "kind": "trail"
+    },
+    "punch": true
+   },
+   {
+    "text": "BREATHE BETTER",
+    "beats": 8,
+    "bg": "dark",
+    "art": {
+     "kind": "bokeh"
+    },
+    "sub": "Boost Oxygen",
+    "circles": true
+   }
+  ],
+  "instagram": "Life never handed me lemons. It handed me a to-do list and too many tabs.\n\nSo I went outside. Highly recommend. Pack Boost Oxygen, portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air.\n\nWhat did life hand you this week? Tell us below.\n\n#boostoxygen #realtalk",
+  "facebook": "Life never handed me lemons. It handed me a to-do list and too many tabs.\n\nSo I went outside. Highly recommend. Pack Boost Oxygen, portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air.\n\nWhat did life hand you this week? Tell us in the comments.\n\n#boostoxygen #realtalk",
+  "linkedin": "Life never handed me lemons. It handed me a to-do list and too many tabs.\n\nSo I stepped outside. At Boost Oxygen, we make portable, lightweight supplemental oxygen, Made in USA, for people who want to enjoy more of what they love.\n\nWhat did your week hand you? Share it below.\n\n#boostoxygen #realtalk",
+  "x": "Life never handed me lemons. It handed me a to-do list and too many tabs. So I went outside. Highly recommend. Boost Oxygen: portable, lightweight, Made in USA. #boostoxygen"
  }
 ]

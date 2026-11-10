@@ -9,10 +9,12 @@ flash and shake, and every word hit has a tick sound. The music (kick, clap, hat
 synthesized here, so it is original and royalty free. It is NOT a trending sound: add that in-app.
 Brand rules still apply: Oswald/Open Sans, toolkit palette only, no logo or product drawn.
 """
-import json, math, subprocess, wave
+import json, math, subprocess, sys, wave
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
+import backgrounds
 
 ROOT = Path(__file__).resolve().parent
 FONTS = ROOT / "assets" / "fonts"
@@ -73,7 +75,8 @@ def layout(scene, size):
     f = font("Oswald_600SemiBold.ttf", hs)
     lh = int(hs * 1.12)
     total_h = lh * len(lines)
-    y0 = (H - total_h) / 2 - H * 0.02
+    ty = 0.36 if scene.get("art", {}).get("kind") in ("chart", "trail", "route") else 0.48
+    y0 = H * ty - total_h / 2
     pos = []
     for li, line in enumerate(lines):
         widths = [d.textlength(w.upper(), font=f) for w, _ in line]
@@ -90,7 +93,10 @@ def draw_frame(scene, size, t, scene_len, nxt_bg=None, progress=0.0, final=False
     """Render one frame. t = seconds since scene start (None with final=True renders the finished state)."""
     W, H = size
     bg, fg, hi = BG[scene.get("bg", "dark")]
-    img = Image.new("RGB", size, bg)
+    if scene.get("art"):
+        img = backgrounds.frame(scene["art"], scene.get("bg", "dark"), size, 1.2 if final else t, scene_len if not final else 2.4)
+    else:
+        img = Image.new("RGB", size, bg)
     d = ImageDraw.Draw(img)
     pos, hs, (top, bot) = layout(scene, size)
     n = len(pos)
@@ -126,7 +132,7 @@ def draw_frame(scene, size, t, scene_len, nxt_bg=None, progress=0.0, final=False
         gap = dia // 5
         total = 5 * dia + 4 * gap
         x0 = (W - total) // 2
-        yy = int(bot + hs * 0.35)
+        yy = int(bot + hs * 0.5)
         for i, col in enumerate(BRAND["circle_colors_in_order"]):
             k = 1.0 if final else ease_out_back((t - scene_len * 0.4 - i * 0.07) / 0.2)
             if k < 0.04:

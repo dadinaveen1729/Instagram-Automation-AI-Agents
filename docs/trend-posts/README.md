@@ -1,33 +1,42 @@
 # Trend-based posts for Boost Oxygen (drafts, nothing posted)
 
-Three concepts. Each has a 30-second vertical video with sound (1080x1920), a hook image (1080x1350, for
-Instagram, Facebook and LinkedIn), a wide hook image (1600x900, for X), and a caption per platform
+Five concepts. Each has a 30-second vertical video with sound (1080x1920), a hook image (1080x1350
+for Instagram, Facebook, LinkedIn), a wide hook image (1600x900 for X), and a caption per platform
 (Instagram, Facebook, LinkedIn, X under 280 characters).
 
-| Concept | Trend hook | Product link |
+| # | Trend / format | Hook |
 | --- | --- | --- |
-| 01 markets-unplug | Market jitters, stock news overload | "Close the charts. Open the trail." |
-| 02 ai-analog | Nonstop AI news | "AI can write the email. It can't climb the hill." |
-| 03 thanksgiving-earn-the-pie | Thanksgiving week, turkey trots | "Earn the pie." Uses the confirmed name SPORT Orange \| Large (10L) |
+| 01 | Market jitters, stock news | "Checking the market. Again." |
+| 02 | Nonstop AI news | "AI can write your email." ... "Skills AI does not have:" |
+| 03 | Thanksgiving week, turkey trots | "Thanksgiving math: pie is earned." |
+| 04 | "Major cheat code in life" tip format | "Go outside first. Emails will wait." |
+| 05 | "Life never handed me lemons" humor format | "It handed me a to-do list and too many tabs." |
 
-Every caption and on-image line passes the Boost Oxygen checks (`automation/compliance.py`):
-"canister/aroma" wording, "Made in USA", no medical claims, no invented numbers (only "5X"), max 5
-hashtags, X text under 280 characters.
+Trends 04 and 05 come from a trending-topics list supplied by the account owner (an AI answer citing
+newengen.com, sociable.how and socialbee.com). It is unverified, so check the formats on Instagram
+before posting.
+
+## What's inside each video
+- Story-related animated backgrounds in the brand palette: a jagged market line that turns into a
+  mountain ridge (01, 05), a network that gives way to a forest trail (02), a pie chart that fills and
+  becomes a route with runners (03), a route and trail (04). Built by `automation/backgrounds.py`.
+- Kinetic text (Oswald caps, Open Sans) popping in on the beat, scene flashes and shakes.
+- An original synthesized 120 BPM soundtrack with word-hit sounds (`automation/kinetic.py`). It is
+  royalty free. It is NOT a trending sound.
+
+## Trending audio: add it in the app
+The trends list names two audio-based formats ("It's Time" by Mariah Carey and "Housewife" by Tate
+McRae). Those songs are licensed to the platforms, so they must be added inside Instagram or TikTok
+(Add audio, then pick from Trending), then set the video's own sound to zero. Business accounts may
+only see a commercially licensed subset. Do not embed them in the video file (copyright).
 
 ## Before posting
 - **Abi approves first.** Nothing here has been posted.
-- **Trends are themes, not verified headlines.** A live search did not return a reliable list of
-  today's trends. Check TikTok Creative Center, Instagram Reels and X Explore, and swap in a real
-  headline if you want. Do not name real CEOs or companies, and skip any trend tied to a tragedy,
-  politics or someone's health.
-- **No logo yet.** The approved logo files have not been supplied, so none is drawn. Add the logo
-  in the platform's editor only using the approved files.
-- **No product photo.** These are text cards. Product canisters only come from approved photos.
-- **Videos are kinetic-text skits with an original synthesized beat** (120 BPM, kick, clap, bass, arp,
-  word-hit sounds), built by `automation/kinetic.py`. It is royalty free but it is NOT a trending sound.
-  To ride a trending audio, add it inside Instagram or TikTok after upload (licensed there).
-- **Still no people or product footage.** Real viral Reels usually have a face or the product in hand.
-  Film that (or supply approved photos/video) and these scripts become the voiceover and on-screen text.
-- **Tone:** the humor is dry and aimed at situations (doomscrolling, meetings, "it was a brisk walk"),
-  never at people or health. Abi's rules cap it at friendly and light, not exaggerated or salesy.
-- **LinkedIn:** the feed image works, but LinkedIn prefers 1200x627 if you want a wide one.
+- **No logo, no product photo** (approved files not supplied yet). Product canisters only come from
+  approved photos. The "Add to Cart" product-showcase trend needs approved product photos, so it is not built.
+- **Backgrounds are new illustrations**, not from the Brand Toolkit. Abi should approve the look. They use
+  toolkit colors only.
+- **Tone:** dry humor aimed at situations, never at people or health. All text passes
+  `automation/compliance.py` (canister/aroma wording, Made in USA, no medical claims, only "5X" as a number).
+- Real viral Reels usually show a face or the product in hand. Film that and these scripts become the
+  on-screen text and voiceover.
