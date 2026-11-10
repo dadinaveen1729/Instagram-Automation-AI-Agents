@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .venv/
 *.tmp
+node_modules/
+.next/
+dist/
+release/
