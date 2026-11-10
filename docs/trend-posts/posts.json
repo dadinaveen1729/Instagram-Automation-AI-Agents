@@ -1,38 +1,204 @@
 [
-{"id":"01-markets-unplug","trend":"Market jitters / stock news overload",
- "image":{"eyebrow":"Markets wobbling?","headline":"Close the charts. Open the trail.","sub":"Enjoy more of what you love."},
- "beats":[{"eyebrow":"Markets wobbling again?","text":"Your portfolio can handle itself for an hour.","seconds":5},
-          {"eyebrow":"Plan B","text":"Close the charts.","seconds":4},
-          {"eyebrow":"Plan B","text":"Open the trail.","seconds":4},
-          {"eyebrow":"Pack light","text":"Boost Oxygen is portable and lightweight.","seconds":6},
-          {"eyebrow":"Did you know","text":"Nearly 5X more oxygen than normal air. Made in USA.","seconds":6},
-          {"eyebrow":"Boost Oxygen","text":"Breathe better.","seconds":5}],
- "instagram":"Markets wobbling? Your portfolio can handle itself for an hour.\n\nClose the charts, lace up and go find some green of the actual kind. Boost Oxygen is portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air.\n\nWhat's your go-to way to unplug? Tell us below.\n\n#boostoxygen #unplug",
- "facebook":"Markets wobbling? Your portfolio can handle itself for an hour.\n\nClose the charts and open the trail. Boost Oxygen is portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air, so it fits right in your bag.\n\nWhat's your go-to way to unplug? Tell us in the comments.\n\n#boostoxygen #unplug",
- "linkedin":"Markets move fast. Good habits move us further.\n\nOne of ours: when the news cycle gets loud, step away from the screen and get outside. At Boost Oxygen, we make portable, lightweight supplemental oxygen, Made in USA, for people who want to enjoy more of what they love.\n\nWhat's your favorite way to unplug mid-week? Share it below.\n\n#boostoxygen #worklifebalance",
- "x":"Markets wobbling? Close the charts. Open the trail. Boost Oxygen: portable, lightweight, Made in USA. What's your go-to way to unplug? #boostoxygen"},
-{"id":"02-ai-analog","trend":"Nonstop AI news",
- "image":{"eyebrow":"Everyone's talking AI","headline":"AI can write the email. It can't climb the hill.","sub":"Go do the fun part."},
- "beats":[{"eyebrow":"Headline of the week","text":"AI can write your email.","seconds":5},
-          {"eyebrow":"Plot twist","text":"It can't climb the hill for you.","seconds":5},
-          {"eyebrow":"Go analog","text":"Lace up. Head out.","seconds":4},
-          {"eyebrow":"Pack light","text":"Boost Oxygen: portable and lightweight.","seconds":6},
-          {"eyebrow":"Did you know","text":"Nearly 5X more oxygen than normal air. Made in USA.","seconds":6},
-          {"eyebrow":"Boost Oxygen","text":"Enjoy more of what you love.","seconds":4}],
- "instagram":"AI can write the email. It can't climb the hill for you.\n\nSo go do the fun part. Boost Oxygen is portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air.\n\nWhat's the most analog thing you did this week? Tell us below.\n\n#boostoxygen #goanalog",
- "facebook":"AI can write the email. It can't climb the hill for you.\n\nSo go do the fun part. Boost Oxygen is portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air.\n\nWhat's the most analog thing you did this week? Tell us in the comments.\n\n#boostoxygen #goanalog",
- "linkedin":"Everyone's talking about what AI can do. Here's something it can't: get you up the trail.\n\nAt Boost Oxygen, we make portable, lightweight supplemental oxygen, Made in USA, for people who want to enjoy more of what they love.\n\nWhat's the most analog thing you did this week? Share it below.\n\n#boostoxygen #goanalog",
- "x":"AI can write the email. It can't climb the hill for you. Boost Oxygen: portable, lightweight, Made in USA. What's your most analog move this week? #boostoxygen"},
-{"id":"03-thanksgiving-earn-the-pie","trend":"Thanksgiving week / turkey trots",
- "image":{"eyebrow":"Thanksgiving week","headline":"Earn the pie.","sub":"SPORT Orange | Large (10L)"},
- "beats":[{"eyebrow":"Thanksgiving week","text":"The plan: earn the pie.","seconds":5},
-          {"eyebrow":"Step one","text":"Turkey trot.","seconds":4},
-          {"eyebrow":"Step two","text":"Pie. Obviously.","seconds":4},
-          {"eyebrow":"In your bag","text":"SPORT Orange | Large (10L)","seconds":6},
-          {"eyebrow":"Did you know","text":"Nearly 5X more oxygen than normal air. Made in USA.","seconds":6},
-          {"eyebrow":"Boost Oxygen","text":"Push beyond.","seconds":5}],
- "instagram":"Thanksgiving week plan: earn the pie.\n\nStep one, the turkey trot. Step two, pie. Toss SPORT Orange | Large (10L) in your bag, with its orange aroma, nearly 5X more oxygen than normal air and a Made in USA label.\n\nWhat's your pie of choice? Tell us below.\n\n#boostoxygen #turkeytrot",
- "facebook":"Thanksgiving week plan: earn the pie.\n\nStep one, the turkey trot. Step two, pie. Toss SPORT Orange | Large (10L) in your bag, with its orange aroma and nearly 5X more oxygen than normal air. Made in USA.\n\nWhat's your pie of choice? Tell us in the comments.\n\n#boostoxygen #turkeytrot",
- "linkedin":"Thanksgiving week, sorted: get outside first, pie second.\n\nAt Boost Oxygen, we make portable, lightweight supplemental oxygen, Made in USA. Grab SPORT Orange | Large (10L) for the trail or the turkey trot.\n\nWhat's your Thanksgiving week ritual? Share it below.\n\n#boostoxygen #thanksgiving",
- "x":"Thanksgiving week plan: earn the pie. Turkey trot first, pie second. Toss SPORT Orange | Large (10L) in the bag. Made in USA. Your pie of choice? #boostoxygen"}
+ {
+  "id": "01-markets-unplug",
+  "trend": "Market jitters / stock news overload",
+  "scenes": [
+   {
+    "text": "Checking the market. *Again.*",
+    "beats": 4,
+    "bg": "dark",
+    "eyebrow": "POV: it's still morning",
+    "punch": true
+   },
+   {
+    "text": "Bold strategy.",
+    "beats": 4,
+    "bg": "light"
+   },
+   {
+    "text": "Counter-offer:",
+    "beats": 4,
+    "bg": "mid"
+   },
+   {
+    "text": "Go outside. *Seriously.*",
+    "beats": 6,
+    "bg": "dark",
+    "punch": true
+   },
+   {
+    "text": "The trail doesn't have a ticker.",
+    "beats": 6,
+    "bg": "light"
+   },
+   {
+    "text": "We make supplemental oxygen. Not financial advice.",
+    "beats": 6,
+    "bg": "dark"
+   },
+   {
+    "text": "Pack *Boost Oxygen.* Portable. Lightweight. Made in USA.",
+    "beats": 8,
+    "bg": "mid",
+    "circles": true
+   },
+   {
+    "text": "Nearly *5X* more oxygen than normal air.",
+    "beats": 6,
+    "bg": "dark"
+   },
+   {
+    "text": "The charts will still be there. *Go anyway.*",
+    "beats": 8,
+    "bg": "light",
+    "punch": true
+   },
+   {
+    "text": "BREATHE BETTER",
+    "beats": 8,
+    "bg": "dark",
+    "sub": "Boost Oxygen",
+    "circles": true
+   }
+  ],
+  "instagram": "Checking the market. Again.\n\nWe make supplemental oxygen, not financial advice, but here's our hot take: the trail doesn't have a ticker.\n\nPack Boost Oxygen, portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air. The charts will still be there when you get back.\n\nWho else just checked their phone twice? Tell us below.\n\n#boostoxygen #unplug",
+  "facebook": "Checking the market. Again.\n\nWe make supplemental oxygen, not financial advice, but here's our hot take: the trail doesn't have a ticker.\n\nPack Boost Oxygen, portable, lightweight and Made in USA, and go anyway. The charts will still be there when you get back.\n\nWho else just checked their phone twice? Tell us in the comments.\n\n#boostoxygen #unplug",
+  "linkedin": "Hot take from a company that makes oxygen, not investment advice: a trail is a great break from the market.\n\nAt Boost Oxygen, we make portable, lightweight supplemental oxygen, Made in USA, for people who want to enjoy more of what they love. The charts will still be there when you get back.\n\nWhat's your favorite way to unplug mid-week? Share it below.\n\n#boostoxygen #worklifebalance",
+  "x": "We make oxygen. Not financial advice. But the trail doesn't have a ticker. The charts will still be there. Go anyway. #boostoxygen"
+ },
+ {
+  "id": "02-ai-analog",
+  "trend": "Nonstop AI news",
+  "scenes": [
+   {
+    "text": "AI can write your email.",
+    "beats": 4,
+    "bg": "dark",
+    "eyebrow": "Headline of the week",
+    "punch": true
+   },
+   {
+    "text": "Plan your trip.",
+    "beats": 4,
+    "bg": "mid"
+   },
+   {
+    "text": "Even apologize for you.",
+    "beats": 4,
+    "bg": "light"
+   },
+   {
+    "text": "Impressive. *Truly.*",
+    "beats": 4,
+    "bg": "dark"
+   },
+   {
+    "text": "Skills AI does not have:",
+    "beats": 8,
+    "bg": "light"
+   },
+   {
+    "text": "Skill one: trail snacks.",
+    "beats": 4,
+    "bg": "mid"
+   },
+   {
+    "text": "Skill two: a dumb grin at the summit.",
+    "beats": 4,
+    "bg": "dark"
+   },
+   {
+    "text": "Skill three: a *Boost Oxygen* canister in the bag.",
+    "beats": 6,
+    "bg": "mid",
+    "punch": true
+   },
+   {
+    "text": "Nearly *5X* more oxygen than normal air. Made in USA.",
+    "beats": 6,
+    "bg": "dark"
+   },
+   {
+    "text": "Go be a human. *It's still a pretty great job.*",
+    "beats": 8,
+    "bg": "light"
+   },
+   {
+    "text": "BREATHE BETTER",
+    "beats": 8,
+    "bg": "dark",
+    "sub": "Boost Oxygen",
+    "circles": true
+   }
+  ],
+  "instagram": "AI can write your email, plan your trip and apologize for you.\n\nIt can't do trail snacks, a dumb grin at the summit, or a Boost Oxygen canister in the bag. Portable, lightweight, Made in USA, with nearly 5X more oxygen than normal air.\n\nGo be a human. It's still a pretty great job. What's your most analog move this week? Tell us below.\n\n#boostoxygen #goanalog",
+  "facebook": "AI can write your email, plan your trip and apologize for you.\n\nIt can't do trail snacks, a dumb grin at the summit, or a Boost Oxygen canister in the bag. Portable, lightweight, Made in USA.\n\nGo be a human. It's still a pretty great job. What's your most analog move this week? Tell us in the comments.\n\n#boostoxygen #goanalog",
+  "linkedin": "Everyone's talking about what AI can do. Here's our list of what it can't: trail snacks, a dumb grin at the summit, and a Boost Oxygen canister in the bag.\n\nWe make portable, lightweight supplemental oxygen, Made in USA, for people who want to enjoy more of what they love.\n\nWhat's the most analog thing you did this week? Share it below.\n\n#boostoxygen #goanalog",
+  "x": "AI can write your email, plan your trip and apologize for you. It cannot do trail snacks, a dumb grin at the summit or a Boost Oxygen canister in the bag. Go be a human. #boostoxygen"
+ },
+ {
+  "id": "03-thanksgiving-earn-the-pie",
+  "trend": "Thanksgiving week / turkey trots",
+  "scenes": [
+   {
+    "text": "Thanksgiving math:",
+    "beats": 4,
+    "bg": "dark",
+    "eyebrow": "Thanksgiving week",
+    "punch": true
+   },
+   {
+    "text": "Pie is *earned.*",
+    "beats": 8,
+    "bg": "light"
+   },
+   {
+    "text": "Step one: turkey trot.",
+    "beats": 4,
+    "bg": "mid"
+   },
+   {
+    "text": "Step two: tell everyone you *ran* it.",
+    "beats": 6,
+    "bg": "dark"
+   },
+   {
+    "text": "It was a brisk walk.",
+    "beats": 4,
+    "bg": "light",
+    "punch": true
+   },
+   {
+    "text": "Step three: pie.",
+    "beats": 4,
+    "bg": "mid"
+   },
+   {
+    "text": "Pack SPORT Orange | Large (10L) for the trot.",
+    "beats": 6,
+    "bg": "dark"
+   },
+   {
+    "text": "Orange aroma. Nearly *5X* more oxygen than normal air. Made in USA.",
+    "beats": 8,
+    "bg": "mid"
+   },
+   {
+    "text": "Favorite part of the holiday? *Who you walk with.*",
+    "beats": 8,
+    "bg": "light"
+   },
+   {
+    "text": "BREATHE BETTER",
+    "beats": 8,
+    "bg": "dark",
+    "sub": "Boost Oxygen",
+    "circles": true
+   }
+  ],
+  "instagram": "Thanksgiving math: pie is earned.\n\nStep one, turkey trot. Step two, tell everyone you ran it (it was a brisk walk, we won't tell). Step three, pie.\n\nPack SPORT Orange | Large (10L) for the trot: orange aroma, nearly 5X more oxygen than normal air, Made in USA.\n\nFavorite part of the holiday? Who you walk with. Tell us who's joining you below.\n\n#boostoxygen #turkeytrot",
+  "facebook": "Thanksgiving math: pie is earned.\n\nStep one, turkey trot. Step two, tell everyone you ran it (it was a brisk walk, we won't tell). Step three, pie.\n\nPack SPORT Orange | Large (10L) for the trot: orange aroma, nearly 5X more oxygen than normal air, Made in USA.\n\nFavorite part of the holiday? Who you walk with. Tell us who's joining you in the comments.\n\n#boostoxygen #turkeytrot",
+  "linkedin": "Thanksgiving week, sorted: get outside first, pie second.\n\nAt Boost Oxygen, we make portable, lightweight supplemental oxygen, Made in USA. Pack SPORT Orange | Large (10L) for the trail or the turkey trot.\n\nWhat's your Thanksgiving week ritual? Share it below.\n\n#boostoxygen #thanksgiving",
+  "x": "Thanksgiving math: step one, turkey trot. Step two, tell everyone you ran it. It was a brisk walk. Step three, pie. SPORT Orange | Large (10L) comes along. Made in USA. #boostoxygen"
+ }
 ]

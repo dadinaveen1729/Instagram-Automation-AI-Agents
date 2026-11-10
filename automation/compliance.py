@@ -126,6 +126,9 @@ def check(text, visible_text=""):
             flags.append(f'Number not in the approved facts (possible invented detail): "{m.group(0).strip()}".')
     # products need the full approved name
     names = BRAND["products"]["confirmed_full_names"]
+    for tg in BRAND["taglines"]:  # official taglines are not product mentions
+        scan = re.sub(re.escape(tg), " ", scan, flags=re.I)
+        low = scan.lower()
     mentions = [w for w in BRAND["products"]["aroma_words"] if re.search(rf"\b{w}\b", low)]
     mentions += [l for l in BRAND["products"]["lines"] if re.search(rf"\b{l}\b", scan)]
     if mentions and not any(n in scan for n in names):

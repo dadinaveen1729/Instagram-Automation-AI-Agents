@@ -1,7 +1,7 @@
 # Trend-based posts for Boost Oxygen (drafts, nothing posted)
 
-Three concepts. Each has a 30-second vertical video (1080x1920), a feed image (1080x1350, for
-Instagram, Facebook and LinkedIn), a wide image (1600x900, for X), and a caption per platform
+Three concepts. Each has a 30-second vertical video with sound (1080x1920), a hook image (1080x1350, for
+Instagram, Facebook and LinkedIn), a wide hook image (1600x900, for X), and a caption per platform
 (Instagram, Facebook, LinkedIn, X under 280 characters).
 
 | Concept | Trend hook | Product link |
@@ -23,6 +23,11 @@ hashtags, X text under 280 characters.
 - **No logo yet.** The approved logo files have not been supplied, so none is drawn. Add the logo
   in the platform's editor only using the approved files.
 - **No product photo.** These are text cards. Product canisters only come from approved photos.
-- **Videos are text cards with silent audio.** Add trending audio inside Instagram, TikTok or Reels
-  after upload (platform audio is licensed there), and check the captions.
+- **Videos are kinetic-text skits with an original synthesized beat** (120 BPM, kick, clap, bass, arp,
+  word-hit sounds), built by `automation/kinetic.py`. It is royalty free but it is NOT a trending sound.
+  To ride a trending audio, add it inside Instagram or TikTok after upload (licensed there).
+- **Still no people or product footage.** Real viral Reels usually have a face or the product in hand.
+  Film that (or supply approved photos/video) and these scripts become the voiceover and on-screen text.
+- **Tone:** the humor is dry and aimed at situations (doomscrolling, meetings, "it was a brisk walk"),
+  never at people or health. Abi's rules cap it at friendly and light, not exaggerated or salesy.
 - **LinkedIn:** the feed image works, but LinkedIn prefers 1200x627 if you want a wide one.
