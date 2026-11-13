@@ -1,0 +1,54 @@
+Name,Section/Column,Assignee Email,Start Date,Due Date,Tags,Notes
+Nov 13 | Send Abi the open-items list,1. Foundation and brand rules,naveen@boostoxygen.com,2026-11-13,2026-11-13,Brand,"Logos, approved photos, full product names, and the call on toolkit headlines that may read as medical claims."
+Nov 16 | Load toolkit rules into the checker and test,1. Foundation and brand rules,naveen@boostoxygen.com,2026-11-16,2026-11-16,Brand,"Canister/aroma wording, Made in USA, no medical claims, disclaimers exact. Test on sample posts."
+Nov 17 | Set up Meta Business and Instagram link,1. Foundation and brand rules,naveen@boostoxygen.com,2026-11-17,2026-11-17,Instagram,"Professional account linked to a Facebook Page, with a Meta Business account."
+Nov 18 | Create Meta developer app and permissions,1. Foundation and brand rules,naveen@boostoxygen.com,2026-11-18,2026-11-18,Instagram,Instagram publishing permissions and access token.
+Nov 19 | Set up GitHub secrets and media hosting,1. Foundation and brand rules,naveen@boostoxygen.com,2026-11-19,2026-11-19,Infra,Instagram must fetch media from a public link. Confirm the repo or hosting choice.
+Nov 20 | Review trend posts 01-05 with Abi,1. Foundation and brand rules,naveen@boostoxygen.com,2026-11-20,2026-11-20,Brand,"Collect feedback on tone, wording flags and the new animated backgrounds."
+Nov 23 | Fix Abi's feedback on posts,1. Foundation and brand rules,naveen@boostoxygen.com,2026-11-23,2026-11-23,Brand,Update wording flags and visuals from the review.
+Nov 24 | Add approved logos to the renderer,1. Foundation and brand rules,naveen@boostoxygen.com,2026-11-24,2026-11-24,Brand,"Only the approved logo files, no edits. Depends on Abi sending them."
+Nov 25 | Add approved photos and test placement,1. Foundation and brand rules,naveen@boostoxygen.com,2026-11-25,2026-11-25,Brand,"Photos placed whole, no crop or filter. Licensing confirmed first."
+Nov 30 | Add confirmed full product names,1. Foundation and brand rules,naveen@boostoxygen.com,2026-11-30,2026-11-30,Content,"Name, size and capacity from Rob. Update the checker."
+Dec 1 | Define the weekly KPI list,1. Foundation and brand rules,naveen@boostoxygen.com,2026-12-01,2026-12-01,KPI,"Reach per reel, 3-second views, average watch time, shares."
+Dec 2 | Build the KPI tracking sheet,1. Foundation and brand rules,naveen@boostoxygen.com,2026-12-02,2026-12-02,KPI,Template plus how each number is pulled each week.
+Dec 3 | Dry-run publish end to end,1. Foundation and brand rules,naveen@boostoxygen.com,2026-12-03,2026-12-03,Instagram,No live posting. Confirm the publish steps work.
+Dec 4 | Phase 1 checkpoint: status to Matt and Abi,1. Foundation and brand rules,naveen@boostoxygen.com,2026-12-04,2026-12-04,Review,"What is done, what is blocked, what is needed."
+Dec 7 | Test the weekly generator with live Claude,2. Build and test,naveen@boostoxygen.com,2026-12-07,2026-12-07,Pipeline,Check output quality and how many posts get flagged.
+Dec 8 | Tune prompts to cut flagged wording,2. Build and test,naveen@boostoxygen.com,2026-12-08,2026-12-08,Pipeline,Fewer medical-adjacent and superlative flags.
+"Dec 9 | QA Reels: motion, backgrounds and audio",2. Build and test,naveen@boostoxygen.com,2026-12-09,2026-12-09,Instagram,"Kinetic videos, 30 seconds, sound check."
+Dec 10 | Polish carousel and image templates,2. Build and test,naveen@boostoxygen.com,2026-12-10,2026-12-10,Instagram,"Toolkit fonts, colors and spacing."
+Dec 11 | Test the approval flow with Abi,2. Build and test,naveen@boostoxygen.com,2026-12-11,2026-12-11,Approval,"Weekly pull request, flagged posts held for review."
+Dec 14 | Set up Facebook posting and caption style,2. Build and test,naveen@boostoxygen.com,2026-12-14,2026-12-14,Facebook,Page publishing plus the Facebook caption format.
+Dec 15 | Plan LinkedIn posting and caption style,2. Build and test,naveen@boostoxygen.com,2026-12-15,2026-12-15,LinkedIn,Company page access and a professional-friendly tone.
+Dec 16 | Set up X captions (280 characters),2. Build and test,naveen@boostoxygen.com,2026-12-16,2026-12-16,X,"Format, hashtags and account access."
+Dec 17 | Build the 2-week soft-launch calendar,2. Build and test,naveen@boostoxygen.com,2026-12-17,2026-12-17,Content,"Mix of Reels, carousels and images."
+Dec 18 | Compliance audit of the full calendar,2. Build and test,naveen@boostoxygen.com,2026-12-18,2026-12-18,Brand,Flag anything questionable for Abi.
+Dec 21 | Abi reviews the calendar,2. Build and test,naveen@boostoxygen.com,2026-12-21,2026-12-21,Approval,Fix flags and get sign-off.
+Dec 22 | Soft-launch checklist and go/no-go with Matt,2. Build and test,naveen@boostoxygen.com,2026-12-22,2026-12-22,Launch,"Credentials, assets, approvals, pause switch."
+Dec 23 | Final dry run and schedule first posts,2. Build and test,naveen@boostoxygen.com,2026-12-23,2026-12-23,Launch,Queue approved posts for launch.
+Dec 28 | Soft launch day 1: first approved posts live,3. Instagram soft launch,naveen@boostoxygen.com,2026-12-28,2026-12-28,Instagram,Approval mode. Monitor the posts.
+Dec 29 | Monitor posts and draft comment replies,3. Instagram soft launch,naveen@boostoxygen.com,2026-12-29,2026-12-29,Instagram,Replies drafted for Abi to approve.
+Dec 30 | First KPI snapshot,3. Instagram soft launch,naveen@boostoxygen.com,2026-12-30,2026-12-30,KPI,"Early reach, views, watch time, shares."
+Jan 4 | Week 2 posts live and compare reach,3. Instagram soft launch,naveen@boostoxygen.com,2027-01-04,2027-01-04,Instagram,Compare against week 1.
+Jan 5 | Adjust hooks from KPI data,3. Instagram soft launch,naveen@boostoxygen.com,2027-01-05,2027-01-05,Content,Keep the formats that earn more shares and saves.
+Jan 6 | Check Stories and DM keyword flow,3. Instagram soft launch,naveen@boostoxygen.com,2027-01-06,2027-01-06,Instagram,Official Instagram tools only. No automation that breaks the Terms.
+Jan 7 | Weekly KPI report to Matt and Abi,3. Instagram soft launch,naveen@boostoxygen.com,2027-01-07,2027-01-07,KPI,"Numbers, what worked, what changes."
+Jan 8 | Soft-launch retrospective,3. Instagram soft launch,naveen@boostoxygen.com,2027-01-08,2027-01-08,Review,Decide what to change before adding channels.
+Jan 11 | Facebook go-live (approval mode),4. All channels and optimize,naveen@boostoxygen.com,2027-01-11,2027-01-11,Facebook,First approved Facebook posts.
+Jan 12 | LinkedIn go-live (approval mode),4. All channels and optimize,naveen@boostoxygen.com,2027-01-12,2027-01-12,LinkedIn,First approved LinkedIn posts.
+Jan 13 | X go-live (approval mode),4. All channels and optimize,naveen@boostoxygen.com,2027-01-13,2027-01-13,X,First approved X posts.
+Jan 14 | Cross-channel KPI snapshot,4. All channels and optimize,naveen@boostoxygen.com,2027-01-14,2027-01-14,KPI,"Instagram, Facebook, LinkedIn and X side by side."
+Jan 15 | Double down on the best-performing format,4. All channels and optimize,naveen@boostoxygen.com,2027-01-15,2027-01-15,Content,Based on KPIs.
+Jan 19 | Harden the automation,4. All channels and optimize,naveen@boostoxygen.com,2027-01-19,2027-01-19,Pipeline,"Token renewal, pause switch test, error handling."
+Jan 20 | Compliance spot-check of live posts,4. All channels and optimize,naveen@boostoxygen.com,2027-01-20,2027-01-20,Brand,Confirm rules are still followed.
+Jan 21 | Weekly KPI report to Matt and Abi,4. All channels and optimize,naveen@boostoxygen.com,2027-01-21,2027-01-21,KPI,Numbers and next steps.
+Jan 22 | Write the runbook,4. All channels and optimize,naveen@boostoxygen.com,2027-01-22,2027-01-22,Docs,"How to run, approve and stop the automation."
+Jan 25 | Plan the February calendar,4. All channels and optimize,naveen@boostoxygen.com,2027-01-25,2027-01-25,Content,Draft for Abi to review.
+Jan 26 | Review results with Matt,4. All channels and optimize,naveen@boostoxygen.com,2027-01-26,2027-01-26,Review,"KPIs, learnings and next steps."
+Jan 27 | Handover notes and open issues,4. All channels and optimize,naveen@boostoxygen.com,2027-01-27,2027-01-27,Docs,"What is running, what is left."
+Jan 28 | Final January KPI report,4. All channels and optimize,naveen@boostoxygen.com,2027-01-28,2027-01-28,KPI,Month summary across all channels.
+Jan 29 | Project wrap-up and February plan approved,4. All channels and optimize,naveen@boostoxygen.com,2027-01-29,2027-01-29,Launch,Sign-off with Matt and Abi.
+MILESTONE: Soft-launch go/no-go,Milestones,naveen@boostoxygen.com,2026-12-22,2026-12-22,Milestone,
+MILESTONE: Instagram soft launch live,Milestones,naveen@boostoxygen.com,2026-12-28,2026-12-28,Milestone,
+MILESTONE: All four channels live (approval mode),Milestones,naveen@boostoxygen.com,2027-01-13,2027-01-13,Milestone,
+MILESTONE: Project complete,Milestones,naveen@boostoxygen.com,2027-01-31,2027-01-31,Milestone,
