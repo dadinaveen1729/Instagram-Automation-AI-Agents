@@ -1,6 +1,6 @@
 # Trend-based posts for Boost Oxygen (drafts, nothing posted)
 
-Five concepts. Each has a 30-second vertical video with sound (1080x1920), a hook image (1080x1350
+Eight concepts. Each has a 30-second vertical video with sound (1080x1920), a hook image (1080x1350
 for Instagram, Facebook, LinkedIn), a wide hook image (1600x900 for X), and a caption per platform
 (Instagram, Facebook, LinkedIn, X under 280 characters).
 
@@ -11,6 +11,9 @@ for Instagram, Facebook, LinkedIn), a wide hook image (1600x900 for X), and a ca
 | 03 | Thanksgiving week, turkey trots | "Thanksgiving math: pie is earned." |
 | 04 | "Major cheat code in life" tip format | "Go outside first. Emails will wait." |
 | 05 | "Life never handed me lemons" humor format | "It handed me a to-do list and too many tabs." |
+| 06 | Email outage humor (Boost Hydration) | "When Outlook goes down: inbox offline." |
+| 07 | Earnings week, Nvidia watching (Boost Hydration) | "Pro tip: diversify. Add water." |
+| 08 | "This meeting could've been an email" (Hydration + Oxygen) | "Reply all? Reply trail." |
 
 Trends 04 and 05 come from a trending-topics list supplied by the account owner (an AI answer citing
 newengen.com, sociable.how and socialbee.com). It is unverified, so check the formats on Instagram
@@ -40,3 +43,15 @@ only see a commercially licensed subset. Do not embed them in the video file (co
   `automation/compliance.py` (canister/aroma wording, Made in USA, no medical claims, only "5X" as a number).
 - Real viral Reels usually show a face or the product in hand. Film that and these scripts become the
   on-screen text and voiceover.
+
+## Posts 06 to 08: verify and review before posting
+- **Boost Hydration has no approved facts or rules** in the toolkit or Abi's email. The copy makes no
+  ingredient, benefit, number or usage claims, and avoids "flavor" and "aroma". Abi must confirm the
+  product name, wording and any disclaimers.
+- **Outlook outage (06):** a search did not confirm an outage on Nov 12-13 (closest: a minor Outlook on the
+  web incident on Nov 9). The post is written as "When Outlook goes down", not as a dated claim. Check the
+  event is still in the news before posting.
+- **Nvidia earnings (07):** the date was unconfirmed across sources (Nov 17, 18 or 25). The post says
+  "earnings week" only. Naming a real company in a joke should be OK by Abi, and it must not imply a
+  partnership or endorsement.
+- "Not financial advice" is in the joke on purpose. Keep it.
