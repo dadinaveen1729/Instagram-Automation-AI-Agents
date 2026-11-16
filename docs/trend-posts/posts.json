@@ -490,5 +490,303 @@
   "facebook": "Life never handed me lemons. It handed me a to-do list and too many tabs.\n\nSo I went outside. Highly recommend. Pack Boost Oxygen, portable, lightweight and Made in USA, with nearly 5X more oxygen than normal air.\n\nWhat did life hand you this week? Tell us in the comments.\n\n#boostoxygen #realtalk",
   "linkedin": "Life never handed me lemons. It handed me a to-do list and too many tabs.\n\nSo I stepped outside. At Boost Oxygen, we make portable, lightweight supplemental oxygen, Made in USA, for people who want to enjoy more of what they love.\n\nWhat did your week hand you? Share it below.\n\n#boostoxygen #realtalk",
   "x": "Life never handed me lemons. It handed me a to-do list and too many tabs. So I went outside. Highly recommend. Boost Oxygen: portable, lightweight, Made in USA. #boostoxygen"
+ },
+ {
+  "id": "06-outlook-down",
+  "trend": "Email outage humor (verify the event before posting)",
+  "scenes": [
+   {
+    "text": "When Outlook goes down:",
+    "beats": 4,
+    "bg": "dark",
+    "art": {
+     "kind": "network"
+    },
+    "eyebrow": "Breaking",
+    "punch": true
+   },
+   {
+    "text": "Inbox: offline.",
+    "beats": 4,
+    "bg": "light",
+    "art": {
+     "kind": "network"
+    }
+   },
+   {
+    "text": "Reply-all: *impossible.*",
+    "beats": 4,
+    "bg": "mid",
+    "art": {
+     "kind": "network"
+    }
+   },
+   {
+    "text": "Your only task today:",
+    "beats": 6,
+    "bg": "dark",
+    "art": {
+     "kind": "network"
+    }
+   },
+   {
+    "text": "Drink some water.",
+    "beats": 8,
+    "bg": "light",
+    "art": {
+     "kind": "waves",
+     "rise": [
+      0.9,
+      0.78
+     ]
+    },
+    "punch": true
+   },
+   {
+    "text": "Boost Hydration packet. *Zero excuses.*",
+    "beats": 8,
+    "bg": "mid",
+    "art": {
+     "kind": "waves",
+     "rise": [
+      0.78,
+      0.66
+     ]
+    }
+   },
+   {
+    "text": "Out of office. *On purpose.*",
+    "beats": 10,
+    "bg": "dark",
+    "art": {
+     "kind": "waves",
+     "rise": [
+      0.66,
+      0.56
+     ]
+    }
+   },
+   {
+    "text": "Tell your manager it's a hydration break.",
+    "beats": 8,
+    "bg": "light",
+    "art": {
+     "kind": "waves",
+     "rise": [
+      0.56,
+      0.48
+     ]
+    }
+   },
+   {
+    "text": "BOOST HYDRATION",
+    "beats": 8,
+    "bg": "dark",
+    "art": {
+     "kind": "bokeh"
+    },
+    "circles": false
+   }
+  ],
+  "instagram": "When Outlook goes down: inbox offline, reply-all impossible.\n\nYour only task today? Drink some water. Boost Hydration packet. Zero excuses.\n\nTell your manager it's a hydration break. We won't tell.\n\nWhat did you do with your free hour? Tell us below.\n\n#boosthydration #outage",
+  "facebook": "When Outlook goes down: inbox offline, reply-all impossible.\n\nYour only task today? Drink some water. Boost Hydration packet. Zero excuses.\n\nTell your manager it's a hydration break. We won't tell.\n\nWhat did you do with your free hour? Tell us in the comments.\n\n#boosthydration #outage",
+  "linkedin": "When Outlook goes down, the inbox takes a day off. Here's a suggestion for the free hour: drink some water.\n\nBoost Hydration. Zero excuses.\n\nWhat's your favorite use of an unplanned break? Share it below.\n\n#boosthydration #workday",
+  "x": "When Outlook goes down: inbox offline, reply-all impossible. Your only task today: drink some water. Boost Hydration packet. Zero excuses. #boosthydration"
+ },
+ {
+  "id": "07-earnings-week",
+  "trend": "Earnings-week / Nvidia watching (verify the date before posting)",
+  "scenes": [
+   {
+    "text": "Earnings week. Everyone's watching *Nvidia.*",
+    "beats": 4,
+    "bg": "dark",
+    "art": {
+     "kind": "chart"
+    },
+    "eyebrow": "Meanwhile",
+    "punch": true
+   },
+   {
+    "text": "Refreshing the ticker.",
+    "beats": 4,
+    "bg": "light",
+    "art": {
+     "kind": "chart"
+    }
+   },
+   {
+    "text": "Again.",
+    "beats": 6,
+    "bg": "mid",
+    "art": {
+     "kind": "chart"
+    }
+   },
+   {
+    "text": "Your water bottle:",
+    "beats": 6,
+    "bg": "dark",
+    "art": {
+     "kind": "chart",
+     "morph": [
+      0,
+      0.5
+     ]
+    }
+   },
+   {
+    "text": "*Untouched.*",
+    "beats": 6,
+    "bg": "light",
+    "art": {
+     "kind": "chart",
+     "morph": [
+      0.5,
+      1
+     ]
+    },
+    "punch": true
+   },
+   {
+    "text": "Pro tip: diversify. *Add water.*",
+    "beats": 8,
+    "bg": "mid",
+    "art": {
+     "kind": "waves",
+     "rise": [
+      0.88,
+      0.7
+     ]
+    }
+   },
+   {
+    "text": "Boost Hydration. *Not financial advice.*",
+    "beats": 8,
+    "bg": "dark",
+    "art": {
+     "kind": "waves",
+     "rise": [
+      0.7,
+      0.58
+     ]
+    }
+   },
+   {
+    "text": "Stocks go up and down. Hydration is a habit.",
+    "beats": 10,
+    "bg": "light",
+    "art": {
+     "kind": "waves",
+     "rise": [
+      0.58,
+      0.48
+     ]
+    }
+   },
+   {
+    "text": "BOOST HYDRATION",
+    "beats": 8,
+    "bg": "dark",
+    "art": {
+     "kind": "bokeh"
+    }
+   }
+  ],
+  "instagram": "Earnings week. Everyone's watching Nvidia. Refreshing the ticker. Again.\n\nMeanwhile, your water bottle: untouched. Pro tip: diversify. Add water. Boost Hydration. Not financial advice.\n\nStocks go up and down. Hydration is a habit. What's your earnings-week ritual? Tell us below.\n\n#boosthydration #earningsweek",
+  "facebook": "Earnings week. Everyone's watching Nvidia. Refreshing the ticker. Again.\n\nMeanwhile, your water bottle: untouched. Pro tip: diversify. Add water. Boost Hydration. Not financial advice.\n\nWhat's your earnings-week ritual? Tell us in the comments.\n\n#boosthydration #earningsweek",
+  "linkedin": "Earnings week: the entire internet is refreshing a ticker.\n\nA friendly pro tip from a hydration brand: diversify. Add water. Boost Hydration. Not financial advice.\n\nWhat's your earnings-week ritual? Share it below.\n\n#boosthydration #earningsweek",
+  "x": "Earnings week. Everyone's watching Nvidia. Your water bottle: untouched. Pro tip: diversify. Add water. Boost Hydration. Not financial advice. #boosthydration"
+ },
+ {
+  "id": "08-meeting-email-walk",
+  "trend": "'This meeting could've been an email' work humor",
+  "scenes": [
+   {
+    "text": "This meeting could've been an email.",
+    "beats": 6,
+    "bg": "dark",
+    "art": {
+     "kind": "network"
+    },
+    "eyebrow": "Real talk",
+    "punch": true
+   },
+   {
+    "text": "This email could've been a *walk.*",
+    "beats": 6,
+    "bg": "light",
+    "art": {
+     "kind": "route"
+    }
+   },
+   {
+    "text": "Pack *Boost Hydration.*",
+    "beats": 6,
+    "bg": "mid",
+    "art": {
+     "kind": "waves",
+     "rise": [
+      0.8,
+      0.62
+     ]
+    }
+   },
+   {
+    "text": "Pack *Boost Oxygen.*",
+    "beats": 6,
+    "bg": "dark",
+    "art": {
+     "kind": "trail"
+    }
+   },
+   {
+    "text": "Boost Oxygen: nearly *5X* more oxygen than normal air. Made in USA.",
+    "beats": 8,
+    "bg": "mid",
+    "art": {
+     "kind": "trail"
+    }
+   },
+   {
+    "text": "Sent from the trail.",
+    "beats": 6,
+    "bg": "light",
+    "art": {
+     "kind": "trail"
+    },
+    "punch": true
+   },
+   {
+    "text": "Reply all? *Reply trail.*",
+    "beats": 8,
+    "bg": "dark",
+    "art": {
+     "kind": "trail"
+    }
+   },
+   {
+    "text": "Out of office. *Into the woods.*",
+    "beats": 6,
+    "bg": "light",
+    "art": {
+     "kind": "trail"
+    }
+   },
+   {
+    "text": "BREATHE BETTER",
+    "beats": 8,
+    "bg": "dark",
+    "art": {
+     "kind": "bokeh"
+    },
+    "sub": "Boost Oxygen",
+    "circles": true
+   }
+  ],
+  "instagram": "This meeting could've been an email. This email could've been a walk.\n\nPack Boost Hydration and Boost Oxygen: nearly 5X more oxygen than normal air, Made in USA. Sent from the trail.\n\nReply all? Reply trail. What's your out-of-office plan? Tell us below.\n\n#boosthydration #boostoxygen",
+  "facebook": "This meeting could've been an email. This email could've been a walk.\n\nPack Boost Hydration and Boost Oxygen: nearly 5X more oxygen than normal air, Made in USA. Sent from the trail.\n\nWhat's your out-of-office plan? Tell us in the comments.\n\n#boosthydration #boostoxygen",
+  "linkedin": "This meeting could've been an email. This email could've been a walk.\n\nTwo things we make for the walk: Boost Hydration, and Boost Oxygen with nearly 5X more oxygen than normal air, Made in USA.\n\nWhat's your out-of-office plan? Share it below.\n\n#boosthydration #boostoxygen",
+  "x": "This meeting could've been an email. This email could've been a walk. Sent from the trail. Reply all? Reply trail. #boosthydration #boostoxygen"
  }
 ]

@@ -75,7 +75,7 @@ def layout(scene, size):
     f = font("Oswald_600SemiBold.ttf", hs)
     lh = int(hs * 1.12)
     total_h = lh * len(lines)
-    ty = 0.36 if scene.get("art", {}).get("kind") in ("chart", "trail", "route") else 0.48
+    ty = 0.36 if scene.get("art", {}).get("kind") in ("chart", "trail", "route", "waves") else 0.48
     y0 = H * ty - total_h / 2
     pos = []
     for li, line in enumerate(lines):

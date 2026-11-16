@@ -240,6 +240,32 @@ def bokeh(size, tone, t, u):
     return _blend(img, ov.filter(ImageFilter.GaussianBlur(5)))
 
 
+# ----------------------------------------------------------------- waves (hydration)
+def waves(size, tone, t, u, rise=(0.84, 0.60)):
+    W, H = size
+    p = PAL[tone]
+    lvl = rise[0] + (rise[1] - rise[0]) * u
+    img = gradient(size, p["top"], lerp(p["base"], p["hor"], .5))
+    ov = _overlay(size)
+    d = ImageDraw.Draw(ov)
+    for i in range(3):
+        amp, f, sp = H * 0.012 * (1 + i * .5), 1.2 + 0.5 * i, 0.9 + 0.5 * i
+        y0 = H * (lvl + 0.035 * i)
+        pts = [(x, y0 + amp * math.sin(2 * math.pi * f * x / W + t * sp + i)) for x in range(0, W + 20, 20)]
+        d.polygon(pts + [(W, H), (0, H)], fill=p["line"] + (46 + i * 34,))
+        if i == 0:
+            d.line(pts, fill=p["line"] + (200,), width=int(W * 0.007), joint="curve")
+    rng = np.random.default_rng(13)
+    for k in range(16):  # bubbles rising through the water
+        x = rng.uniform(0.05, 0.95) * W + 14 * math.sin(t * 1.3 + k)
+        r = rng.uniform(0.008, 0.022) * W
+        span = H * (1 - lvl)
+        y = H - ((t * rng.uniform(40, 90) + rng.uniform(0, span)) % max(span, 1))
+        if y > H * lvl + 12:
+            d.ellipse([x - r, y - r, x + r, y + r], outline=p["line"] + (150,), width=3)
+    return _blend(img, ov)
+
+
 def frame(art, bg, size, t, scene_len):
     """Return the RGB background for a scene at time t (seconds into the scene)."""
     tone = tone_of(bg)
@@ -253,6 +279,8 @@ def frame(art, bg, size, t, scene_len):
         return network(size, tone, t, u)
     if kind == "pie":
         return pie(size, tone, t, u, tuple(art.get("fill", (0, 1))))
+    if kind == "waves":
+        return waves(size, tone, t, u, tuple(art.get("rise", (0.84, 0.60))))
     if kind == "route":
         return route(size, tone, t, u, bool(art.get("two")))
     return bokeh(size, tone, t, u)
